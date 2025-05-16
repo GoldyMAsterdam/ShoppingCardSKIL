@@ -4,6 +4,5 @@
 
 .product__button--disabled:hover {
     scale: 1;
-    
     cursor: not-allowed;
 }
