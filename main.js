@@ -1,19 +1,22 @@
 
 let cartCount = 0;
 
-function changeLabel() {
-    const button = document.querySelector('.product__button--disabled');
-    button.innerHTML = 'Button Disabled'
-}
-
-function addToCart() {
+function AddToCart(button) {
+    if (button.classList.contains('product__button--disabled') || button.disabled)
+    {
+        return;
+    }
     cartCount++;
     const badge = document.getElementById('cart-badge');
     badge.textContent = cartCount;
     badge.classList.remove('hidden');
 }
 
-function cart() {
-    addToCart(),
-    changeLabel();
+function RemoveFromCart() {
+    if (cartCount > 0) {
+        cartCount--;
+    }
+    const badge = document.getElementById('cart-badge');
+    badge.textContent = cartCount;
+    badge.classList.remove('hidden');
 }

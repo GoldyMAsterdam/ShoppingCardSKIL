@@ -1,8 +1,16 @@
 .product__button--disabled {
-
+    background-color: red;
 }
 
 .product__button--disabled:hover {
     scale: 1;
     cursor: not-allowed;
+}
+
+.product__button--disabled span {
+    display: none;
+}
+
+.product__button--disabled:after {
+    content: 'Out Of Stock';
 }

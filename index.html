@@ -20,7 +20,9 @@
             <li class="text-white text-xl font-bold cursor-pointer relative">
                 <a href="checkout.html" class="relative">
                     <svg class="mr-20" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
-                    <span id="cart-badge" class="hidden absolute top-0 right-6 bg-red-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">0</span>
+                    
+                    <!-- Cart Counter -->
+                    <span id="cart-badge" class="hidden absolute bottom-12 left-6 bg-red-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">0</span>
                 </a>
             </li>
         </ul>
@@ -32,8 +34,11 @@
                 <h2 class="product__title text-lg font-semibold text-white mt-15">Kawasaki H2R</h2>
                 <p class="product__title text-sm text-gray-300"></p>
                 <p class="product__title text-lg font-bold text-white mt-2">€2500,-</p>
-                <button onclick="cart()" class="product__button--disabled bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition duration-300 mt-2 cursor-pointer hover:scale-105">
-                    Add to Cart
+                <button onclick="AddToCart(this)" class="product__button--disabled bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition duration-300 mt-2 cursor-pointer hover:scale-105">
+                    <span>Add to Cart</span>
+                </button>
+                 <button onclick="RemoveFromCart()" class="absolute text-white ml-40 mt-[26.8rem]">
+                    <svg class="cursor-pointer hover:scale-105" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash2-icon lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>
                 </button>
             </div>
         </div>
@@ -44,8 +49,11 @@
                 <h2 class="product__title text-lg font-semibold text-white">Yamaha</h2>
                 <p class="product__title text-sm text-gray-300"></p>
                 <p class="product__title text-lg font-bold text-white mt-2">€799.99</p>
-                <button onclick="cart()" class="product__button--disabled bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition duration-300 mt-2 cursor-pointer hover:scale-105">
-                    Add to Cart
+                <button onclick="AddToCart(this)" class="product__button--disabled bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition duration-300 mt-2 cursor-pointer hover:scale-105">
+                    <span>Add to Cart</span>
+                </button>
+                <button onclick="RemoveFromCart()" class="absolute text-white ml-40 mt-[26.8rem]">
+                    <svg class="cursor-pointer hover:scale-105" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash2-icon lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>
                 </button>
             </div>
         </div>
@@ -56,8 +64,11 @@
                 <h2 class="product__title text-lg font-semibold text-white">BMW S1K</h2>
                 <p class="product__title text-sm text-gray-300"></p>
                 <p class="product__title text-lg font-bold text-white mt-2 mb-5">€2999.99</p>
-                <button onclick="cart()" class="product__button--disabled bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition duration-300 mb-8 cursor-pointer hover:scale-105">
-                    Add to Cart
+                <button onclick="AddToCart(this)" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition duration-300 mb-8 cursor-pointer hover:scale-105">
+                    <span>Add to Cart</span>
+                </button>
+                <button onclick="RemoveFromCart()" class="absolute text-white ml-40 mt-[26.8rem]">
+                    <svg class="cursor-pointer hover:scale-105" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash2-icon lucide-trash-2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>
                 </button>
             </div>
         </div>
