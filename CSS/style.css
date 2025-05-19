@@ -1,3 +1,7 @@
+body {
+    background: linear-gradient(90deg,rgba(65, 42, 155, 1) 1%, rgba(199, 87, 197, 1) 50%, rgba(237, 83, 191, 1) 100%);
+}
+
 .product__button--disabled {
     background-color: red;
 }
