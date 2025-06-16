@@ -1,0 +1,20 @@
+{
+  "name": "motorcycle-shop",
+  "version": "1.0.0",
+  "description": "Motorcycle shopping cart",
+  "main": "main.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./CSS/style.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./CSS/style.css --watch"
+  },
+  "keywords": [
+    "motorcycle",
+    "shopping",
+    "cart"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}

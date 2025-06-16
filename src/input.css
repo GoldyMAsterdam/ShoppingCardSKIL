@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: linear-gradient(90deg,rgba(65, 42, 155, 1) 1%, rgba(199, 87, 197, 1) 50%, rgba(237, 83, 191, 1) 100%);
+}
+
+.product__button--disabled {
+    background-color: red;
+}
+
+.product__button--disabled:hover {
+    scale: 1;
+    cursor: not-allowed;
+}
+
+.product__button--disabled span {
+    display: none;
+}
+
+.product__button--disabled:after {
+    content: 'Out Of Stock';
+}

@@ -56,6 +56,7 @@ function AddToCart(button) {
     const badge = document.getElementById('cart-badge');
     badge.textContent = cartCount;
     badge.classList.remove('hidden');
+    badge.classList.add('flex');
 }
 
 function RemoveFromCart() {
@@ -64,5 +65,11 @@ function RemoveFromCart() {
     }
     const badge = document.getElementById('cart-badge');
     badge.textContent = cartCount;
-    badge.classList.remove('hidden');
+    if (cartCount === 0) {
+        badge.classList.add('hidden');
+        badge.classList.remove('flex');
+    } else {
+        badge.classList.remove('hidden');
+        badge.classList.add('flex');
+    }
 }
